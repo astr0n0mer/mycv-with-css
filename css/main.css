@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Neuton:wght@700&family=Pacifico&family=Paprika&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fresca&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../images/resume-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+
+  color: white;
+}
+/* About section starts from here */
+.navbar {
+  padding: 10px 35px;
+  height: 80px;
+
+  background-image: url("../images/resume-bg.jpg");
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+.name a {
+  font-family: Lucida Calligraphy;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 65px;
+  padding: 0px 10px;
+  color: #00afba;
+  text-decoration: none;
+
+  text-shadow: 8px 8px 4px rgba(255, 255, 255, 0.25);
+  display: inline-block;
+}
+.navbar ul {
+  list-style: none;
+  width: 720px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul li a,
+.contact-info a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  text-decoration: none;
+
+  color: #ffffff;
+}
+.navbar ul li a:hover,
+.contact-info a:hover {
+  color: #008000;
+}
+.about {
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-left {
+  height: 100%;
+  width: 40%;
+  padding-left: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo {
+  background: url("../images/imran.jpg");
+  background-size: cover;
+  width: 295px;
+  height: 358px;
+  margin: 70px 0px 10px 0px;
+
+  box-shadow: 8px 8px 4px rgba(213, 206, 206, 0.25);
+  /* filter: drop-shadow(8px 8px 4px rgba(213, 206, 206, 0.25)); */
+  border-radius: 15px;
+  transition: 500ms;
+}
+.photo:hover {
+  transform: scale(1.05);
+}
+.text-student {
+  font-family: Paprika;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 45px;
+  letter-spacing: 0.18em;
+  margin: 10px 0px;
+}
+.about-left span {
+  font-family: Neuton;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
+
+  letter-spacing: 0.18em;
+
+  color: #c07607;
+}
+.about-right {
+  height: 100%;
+  width: 70%;
+}
+.about-right p {
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 63px;
+  letter-spacing: 0.105em;
+
+  display: inline-block;
+  padding: 50px 100px 0px 30px;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.5632) 14.25%,
+    rgba(0, 255, 255, 0.88) 48.14%,
+    rgba(187, 163, 255, 0.7304) 75.35%
+  );
+
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+/* Qualfication section starts from here */
+.line-above {
+  height: 5px;
+  color: white;
+  background-color: white;
+  margin: 20px 40px;
+}
+.qualification,
+.skills,
+.contact {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  text-shadow: 6px 6px 4px rgba(255, 255, 255, 0.3);
+
+  margin: 0px 40px 20px 40px;
+  display: inline-block;
+  transition: 2s;
+}
+.qualification:hover,
+.skills:hover,
+.contact:hover {
+  transform: translateX(73vw);
+}
+.maharashtra-board {
+  height: 240px;
+  width: 80%;
+}
+.mumbai-university {
+  height: 422px;
+  width: 80%;
+}
+.maharashtra-board,
+.mumbai-university {
+  background: #d9d9d9;
+  color: black;
+
+  padding: 15px;
+  margin: 40px auto;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+}
+.maharashtra-board .left,
+.maharashtra-board .right {
+  height: 220px;
+}
+.mumbai-university .left,
+.mumbai-university .right {
+  height: 380px;
+}
+.maharashtra-board .left,
+.mumbai-university .left {
+  width: 600px;
+  display: flex;
+  align-items: center;
+}
+.board-logo {
+  width: 121px;
+  height: 121px;
+  background-image: url("../images/SSC\ Board\ logo.png");
+  background-size: cover;
+
+  transition: 250ms;
+  z-index: 1;
+}
+.uni-logo {
+  width: 150px;
+  height: 140.88px;
+  background-image: url("../images/Mumbai\ University\ logo.png");
+  background-size: cover;
+
+  transition: 250ms;
+  z-index: 1;
+}
+.board-name {
+  position: relative;
+  z-index: 0;
+  left: -50px;
+  padding: 30px 0px 30px 60px;
+  background: linear-gradient(180deg, #c6c716 0%, rgba(198, 199, 22, 0) 94.27%);
+}
+.uni-name {
+  position: relative;
+  z-index: 0;
+  left: -80px;
+  padding: 30px 0px 30px 70px;
+  background: linear-gradient(180deg, #10aee0 0%, rgba(16, 174, 224, 0) 99.48%);
+}
+.board-name,
+.uni-name {
+  width: 494px;
+  height: 100px;
+  font-family: Fresca;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+.maharashtra-board .right {
+  display: flex;
+  align-items: center;
+}
+.mumbai-university .right {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ssc,
+.hsc,
+.sem {
+  width: 50%;
+  height: 200px;
+  background: #d9d9d9;
+  padding: 10px 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  transition: 300ms;
+}
+.year {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ssc,
+.sem-1,
+.sem-3 {
+  border-right: 4px solid rgba(0, 0, 0, 0.69);
+}
+.hsc,
+.sem-2,
+.sem-4 {
+  border-left: 4px solid rgba(0, 0, 0, 0.69);
+}
+.sem-1,
+.sem-2 {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.69);
+}
+.sem-3,
+.sem-4 {
+  border-top: 4px solid rgba(0, 0, 0, 0.69);
+}
+.text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 49px;
+  text-transform: uppercase;
+}
+.value {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 75px;
+
+  text-transform: uppercase;
+  transition: 300ms;
+  color: #008000;
+}
+.maharashtra-board .left:hover > .board-logo {
+  transform: scale(1.1);
+}
+
+.mumbai-university .left:hover > .uni-logo {
+  transform: scale(1.1);
+}
+.ssc:hover,
+.hsc:hover,
+.sem:hover {
+  background-color: #c7c7c7;
+}
+.ssc:hover > .value,
+.hsc:hover > .value,
+.sem:hover > .value {
+  transform: scale(1.1);
+}
+/* Skills section starts from here */
+.skills-container {
+  width: 100%;
+  height: calc(100vh - 56px);
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+}
+.skill-section-1,
+.skill-section-2,
+.skill-section-3 {
+  height: 33%;
+  display: flex;
+  align-items: center;
+}
+.skill-section-1,
+.skill-section-3 {
+  justify-content: center;
+}
+.skill-section-2 {
+  justify-content: space-around;
+}
+.language {
+  width: 180px;
+  height: 200px;
+  margin: 0px 25px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 1s;
+}
+.language:hover {
+  transform: rotate(-360deg);
+}
+.c {
+  background-image: url("../images/c.png");
+}
+.cpp {
+  background-image: url("../images/cplusplus.png");
+}
+.java {
+  background-image: url("../images/java.png");
+  width: 250px;
+}
+.python {
+  background-image: url("../images/python.png");
+}
+.html5 {
+  background-image: url("../images/html.png");
+}
+.css3 {
+  background-image: url("../images/css.png");
+}
+/* Contact section starts from here */
+.contact-container {
+  margin: 60px;
+}
+.contact-section {
+  margin: 30px 0px;
+  display: flex;
+  align-items: center;
+}
+.email-icon,
+.phone-icon,
+.twitter-icon,
+.github-icon,
+.instagram-icon {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  display: inline-block;
+
+  transition: 500ms;
+}
+.email-icon {
+  background-image: url("../images/email.png");
+}
+.phone-icon {
+  background-image: url("../images/phone.png");
+}
+.twitter-icon {
+  background-image: url("../images/twitter.png");
+}
+.github-icon {
+  background-image: url("../images/github.png");
+}
+.instagram-icon {
+  background-image: url("../images/instagram.png");
+}
+.contact-info {
+  margin: auto 50px;
+}
+.contact-info a {
+  font-size: 28px;
+  letter-spacing: 2px;
+
+  transition-duration: 200ms;
+}
